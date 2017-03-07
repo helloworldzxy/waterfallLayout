@@ -1,0 +1,37 @@
+#main{
+
+	/*CSS3多栏布局 会根据浏览器宽度/column-width自动计算栏数并随浏览器窗口宽度的改变而变化*/
+	/*column-width和column-count只使用一个就行了*/
+	/*165 + 2 * 1 + 10 * 2 + 15 = 202px*/
+	-webkit-column-width: 202px; 
+	-moz-column-width: 202px;
+	-o-column-width: 202px;
+	-ms-column-width: 202px;
+	/*浏览器宽度/column-width可能除不尽，就将剩余的width平均分配到栏间距中，所以设置的column-gap不一定与实际的一样*/
+	-webkit-column-gap: 5px; 
+	-moz-column-gap: 5px;
+	-o-column-gap: 5px;
+	-ms-column-gap: 5px;
+	-webkit-column-rule: 1px dashed #f00; 
+	-moz-column-rule: 1px dashed #f00;
+	-o-column-rule: 1px dashed #f00;
+	-ms-column-rule: 1px dashed #f00;
+}
+
+.box{
+	padding: 10px 0 0 15px;
+}
+
+.pic{
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #ccc;
+	width: 165px; /*.pic也定义了width */
+}
+
+.pic img{
+	display: block;
+	width: 165px;
+	height: auto;
+}

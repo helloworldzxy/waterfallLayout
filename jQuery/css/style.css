@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#main{
+	/*因为所有盒子是要绝对定位的，所以它们的父元素要相对定位*/
+	position: relative;
+}
+
+.box{
+	/*盒子之间的间距的实现不用margin的原因：
+	每列图片的高度的累加包括图片本身的大小和图片之间的距离，
+	而offset不包括margin，但会包括padding*/
+	padding: 15px 0 0 15px;
+
+	float: left;
+
+
+}
+
+.pic{
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #ccc;
+
+}
+
+.pic img{
+	/*瀑布流的特点就是等宽不等高，所以需要手动固定img的宽度*/
+	width: 165px;
+	height: auto;
+}
