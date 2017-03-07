@@ -21,7 +21,7 @@
 
 4). 拖动滚动条加载新图片的实现还是需要JS来实现。
 
-jQuery/scatter.html
+##jQuery/scatter.html
 
 一、定义图片布局函数waterfall
 
